@@ -1,0 +1,48 @@
+.tabs-container {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 5rem;
+  }
+  
+  .tabs-nav {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+  }
+  
+  .tabs-nav button {
+    padding: 1rem 2rem;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    font-size: 1.2rem;
+    color: #fff;
+    position: relative;
+    transition: all 0.3s ease;
+  }
+  
+  .tabs-nav button.active {
+    color: #a993fe;
+  }
+  
+  .tabs-nav button::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #a993fe;
+    transition: all 0.3s ease;
+  }
+  
+  .tabs-nav button.active::after {
+    width: 100%;
+  }
+  
+  .tab-content {
+    padding: 2rem;
+    border: 1px solid #333;
+    border-radius: 8px;
+  }
+  
