@@ -21,6 +21,7 @@ import {
   SiReact,
   SiSupabase,
   SiTailwindcss,
+  SiTypescript,
   SiVuedotjs,
 } from "react-icons/si";
 import { VscVscode } from "react-icons/vsc";
@@ -32,6 +33,7 @@ const skillRows = [
       { name: "HTML", icon: SiHtml5 },
       { name: "CSS", icon: SiCss3 },
       { name: "JavaScript", icon: SiJavascript },
+      { name: "TypeScript", icon: SiTypescript },
       { name: "Python", icon: SiPython },
       { name: "Java", icon: FaJava },
     ],

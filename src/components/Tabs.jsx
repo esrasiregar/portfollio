@@ -1,36 +1,40 @@
-import React, { useState } from 'react';
+import React from 'react';
 import Experience from './Experience';
+import Organization from './Organization';
 import Projects from './Projects';
 import Skills from './Skills';
 import '../Tabs.css';
 
-const Tabs = () => {
-  const [activeTab, setActiveTab] = useState('experience');
-
+const Tabs = ({ activeTab, setActiveTab }) => {
   const renderContent = () => {
     switch (activeTab) {
-      case 'experience':
-        return <Experience />;
       case 'projects':
         return <Projects />;
       case 'skills':
         return <Skills />;
+      case 'experience':
+        return <Experience />;
+      case 'organization':
+        return <Organization />;
       default:
         return null;
     }
   };
 
   return (
-    <section className="tabs-container">
+    <section id="portfolio" className="tabs-container">
       <div className="tabs-nav">
-        <button className={activeTab === 'experience' ? 'active' : ''} onClick={() => setActiveTab('experience')}>
-          Pengalaman Organisasi
-        </button>
         <button className={activeTab === 'projects' ? 'active' : ''} onClick={() => setActiveTab('projects')}>
           Projects
         </button>
         <button className={activeTab === 'skills' ? 'active' : ''} onClick={() => setActiveTab('skills')}>
-          Keterampilan
+          Skills
+        </button>
+        <button className={activeTab === 'experience' ? 'active' : ''} onClick={() => setActiveTab('experience')}>
+          Experience
+        </button>
+        <button className={activeTab === 'organization' ? 'active' : ''} onClick={() => setActiveTab('organization')}>
+          Organization
         </button>
       </div>
       <div className="tab-content">{renderContent()}</div>

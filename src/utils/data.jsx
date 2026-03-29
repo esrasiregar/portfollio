@@ -7,17 +7,23 @@ import SertifikatUpgrading2 from "../assets/Certificate/Sertifikat-Upgrading-2-I
 import SertifikatUpgrading3 from "../assets/Certificate/Sertifikat-Upgrading-3-Inforsa.jpg";
 
 export const navLinks = [
-  { id: "tentang-saya", title: "Tentang Saya" },
-  { id: "pengalaman", title: "Pengalaman" },
-  { id: "sertifikat", title: "Sertifikat" },
-  { id: "skills", title: "Keterampilan" },
-  { id: "kontak", title: "Kontak" },
+  { id: "tentang-saya", title: "Tentang Saya", sectionId: "tentang-saya" },
+  { id: "projects", title: "Projects", sectionId: "portfolio", tab: "projects" },
+  { id: "skills", title: "Skills", sectionId: "portfolio", tab: "skills" },
+  { id: "experience", title: "Experience", sectionId: "portfolio", tab: "experience" },
+  { id: "organization", title: "Organization", sectionId: "portfolio", tab: "organization" },
+  { id: "kontak", title: "Kontak", sectionId: "kontak" },
 ];
 
-export const experiences = [
+export const organizations = [
   {
-    year: "2025 - Sekarang",
-    title: "Lead of Cadre Formation Division at INFORSA",
+    year: "2026 - Now",
+    title: "Anggota Majelis Pengawas & Konsultasi Organisasi INFORSA",
+    desc: "Menjadi anggota Majelis Pengawas & Konsultasi Organisasi di INFORSA Kabinet Dirgawana.",
+  },
+  {
+    year: "2025 - 2026",
+    title: "Ketua Divisi Cadre Formation INFORSA",
     desc: "Menjadi Kepala Divisi Cadre Formation di dalam Departemen Human Resources Development di INFORSA Kabinet Cakrawira.",
   },
   {
@@ -31,7 +37,7 @@ export const experiences = [
     desc: "Menjadi Ketua Panitia Pelaksana Musyawarah Besar 6 INFORSA.",
   },
   {
-    year: "2024 - Sekarang",
+    year: "2024 - 2025",
     title: "Staff KPOSDM BEM KM UNMUL",
     desc: "Menjadi Staff Kementerian Kaderisasi, Pengembangan Organisasi & Sumber Daya Mahasiswa BEM KM UNMUL Kabinet Adhikarsa.",
   },
@@ -49,6 +55,55 @@ export const experiences = [
     year: "2018 - 2019",
     title: "Staff Organisasi Intra Sekolah",
     desc: "Menjadi Staff OSIS bagian Hubungan Masyarakat.",
+  }
+];
+
+export const experiences = [
+  {
+    year: "January 2026 - Now",
+    title: "Website Developer at PT Pupuk Kaltim",
+    desc: "Mengembangkan website sistem manajemen untuk perusahaan.",
+  },
+  {
+    year: "August 2025 - December 2025",
+    title: "React & Backend with AI Cohort at Asah Dicoding",
+    desc: "Mengerjakan proyek akademik berbasis sistem informasi mulai dari analisis kebutuhan, perancangan antarmuka, hingga implementasi fitur utama sebagai bagian dari program intensive learning.",
+  },
+  {
+    year: "August 2025 - December 2025",
+    title: "Object Oriented Programming Practitioner at PRAKTISI UNMUL",
+    desc: "Menjadi Asisten Laboratorium untuk praktikum Pemrograman Berorientasi Objek yang mencakup Pengenalan OOP, Implementasi pada Studi Kasus Nyata, Integrasi Database, serta Proyek Akhir.",
+  },
+  {
+    year: "February 2025 - May 2025",
+    title: "Operation System Practicioner at PRAKTISI UNMUL",
+    desc: "Menjadi Asisten Laboratorium untuk praktikum Sistem Operasi yang mencakup Pengenalan Sistem Operasi, Penggunaan Linux, Remastering Sistem Operasi, serta Proyek Akhir.",
+  },
+  {
+    year: "June 2022 - December 2022",
+    title: "Website Developer at PT Janish Lintas Data",
+    desc: "Mengembangkan desain dan template website, dan membantu dalam manajemen data pelanggan.",
+  }
+];
+
+export const projects = [
+  {
+    title: "Project Title",
+    description: "Coming Soon.",
+    image: "https://via.placeholder.com/800x600",
+    link: "",
+  },
+  {
+    title: "Project Title",
+    description: "Coming Soon.",
+    image: "https://via.placeholder.com/800x600",
+    link: "",
+  },
+  {
+    title: "Project Title",
+    description: "Coming Soon.",
+    image: "https://via.placeholder.com/800x600",
+    link: "",
   }
 ];
 

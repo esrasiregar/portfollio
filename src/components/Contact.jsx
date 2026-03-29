@@ -4,7 +4,7 @@ import SetupImage from "../assets/Images/setup.jpeg";
 const Contact = () => {
   return (
     <section id="kontak" className="min-h-screen py-20 text-white flex items-center">
-      <div className="container mx-auto px-6 grid md:grid-cols-2 gap-10 items-center">
+      <div className="mx-auto grid w-full max-w-8xl items-center gap-10 px-8 sm:px-10 lg:grid-cols-[1.08fr_0.92fr] lg:px-16 xl:px-20 2xl:px-24">
         <div>
           <h1 className="text-6xl md:text-7xl font-black leading-tight mb-4" style={{ textShadow: "0 0 12px rgba(255, 255, 255, 0.7)" }}>
             Let&apos;s <br /> Get In Touch
@@ -12,7 +12,7 @@ const Contact = () => {
           <p className="text-lg mb-8 text-gray-300">
             Silakan menghubungi saya apabila ada pertanyaan atau sekadar menyapa.
           </p>
-          <h5 className="font-bold text-xl mb-6 text-[#fcff33]" style={{ textShadow: "0 0 8px #fcff33" }}>esrafernanda2@gmail.com</h5>
+          <h5 className="font-bold text-xl mb-6 text-[#fcff33]" style={{ textShadow: "0 0 8px #fcff33" }}>esrasiregar1735@gmail.com</h5>
           
           <div className="flex gap-4">
             {socials.map((social) => (
@@ -31,7 +31,7 @@ const Contact = () => {
         </div>
         
         <div className="flex justify-center md:justify-end">
-          <div className="w-70 sm:w-[320px] md:w-87.5 h-[70vh] rounded-[40px] overflow-hidden group transition-all duration-500" style={{ boxShadow: "0 0 20px -5px rgba(255, 255, 255, 0.5)" }}>
+          <div className="group h-[70vh] w-70 overflow-hidden rounded-[40px] sm:w-[320px] md:w-88 lg:w-[24rem] transition-all duration-500" style={{ boxShadow: "0 0 20px -5px rgba(255, 255, 255, 0.5)" }}>
             <img
               src={SetupImage}
               alt="Setup Workspace"

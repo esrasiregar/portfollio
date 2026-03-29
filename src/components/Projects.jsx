@@ -1,24 +1,7 @@
 import React from 'react';
+import { projects } from '../utils/data';
 
 const Projects = () => {
-  const projects = [
-    {
-      title: 'Project Title',
-      description: 'Coming Soon',
-      image: 'https://via.placeholder.com/300',
-    },
-    {
-      title: 'Project Title',
-      description: 'Coming Soon',
-      image: 'https://via.placeholder.com/300',
-    },
-    {
-      title: 'Project Title',
-      description: 'Coming Soon',
-      image: 'https://via.placeholder.com/300',
-    },
-  ];
-
   return (
     <section id="projects" className="py-20 text-white">
       <div className="container mx-auto px-6">
@@ -33,10 +16,20 @@ const Projects = () => {
             >
               <img src={project.image} alt={project.title} loading="lazy" className="w-full h-56 object-cover" />
               <div className="p-5">
-                <h4 className="text-lg font-bold text-[#fcff33]" style={{ textShadow: '0 0 6px #fcff33' }}>
+                <h4 className="text-2xl font-bold text-[#fcff33]" style={{ textShadow: '0 0 6px rgba(252,255,51,0.35)' }}>
                   {project.title}
                 </h4>
                 <p className="text-gray-300 mt-2">{project.description}</p>
+                {project.link ? (
+                  <a
+                    href={project.link}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="mt-4 inline-flex text-sm font-bold text-cyan-300 transition duration-300 hover:text-[#fcff33]"
+                  >
+                    Lihat Project
+                  </a>
+                ) : null}
               </div>
             </article>
           ))}

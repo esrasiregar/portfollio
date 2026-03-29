@@ -1,5 +1,5 @@
 .tabs-container {
-    width: 80%;
+    width: min(100% - 4rem, 96rem);
     margin: 0 auto;
     margin-top: 5rem;
   }
@@ -7,42 +7,64 @@
   .tabs-nav {
     display: flex;
     justify-content: center;
+    gap: 0.85rem;
+    flex-wrap: wrap;
     margin-bottom: 2rem;
   }
   
   .tabs-nav button {
-    padding: 1rem 2rem;
-    border: none;
-    background-color: transparent;
+    padding: 0.95rem 1.5rem;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 999px;
+    background-color: rgba(255, 255, 255, 0.02);
     cursor: pointer;
-    font-size: 1.2rem;
-    color: #fff;
+    font-size: 1rem;
+    font-weight: 700;
+    color: rgba(255, 255, 255, 0.82);
     position: relative;
     transition: all 0.3s ease;
   }
   
   .tabs-nav button.active {
-    color: #a993fe;
+    color: #0b1020;
+    border-color: rgba(252, 255, 51, 0.7);
+    background: #fcff33;
+    box-shadow: 0 14px 32px rgba(252, 255, 51, 0.16);
   }
   
   .tabs-nav button::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 0;
-    height: 2px;
-    background-color: #a993fe;
-    transition: all 0.3s ease;
+    display: none;
   }
-  
-  .tabs-nav button.active::after {
-    width: 100%;
+
+  .tabs-nav button:hover {
+    color: #fcff33;
+    border-color: rgba(34, 211, 238, 0.32);
+    background-color: rgba(255, 255, 255, 0.04);
+    box-shadow: 0 12px 26px rgba(0, 0, 0, 0.2);
   }
   
   .tab-content {
-    padding: 2rem;
-    border: 1px solid #333;
-    border-radius: 8px;
+    padding: 0;
+  }
+
+  @media (max-width: 640px) {
+    .tabs-container {
+      width: min(100% - 2rem, 96rem);
+    }
+
+    .tabs-nav {
+      gap: 0.65rem;
+      margin-bottom: 1.25rem;
+    }
+
+    .tabs-nav button {
+      width: 100%;
+      font-size: 0.95rem;
+      padding: 0.85rem 1rem;
+    }
+
+    .tab-content {
+      padding: 0;
+    }
   }
   

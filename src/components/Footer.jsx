@@ -3,7 +3,7 @@ import { navLinks, socials } from "../utils/data";
 const Footer = () => {
   return (
     <footer className="bg-[#0f0f0f] text-white py-12 shadow-[0_-5px_15px_-5px_rgba(0,183,255,0.2)]">
-      <div className="container mx-auto px-6">
+      <div className="mx-auto w-full max-w-8xl px-8 sm:px-10 lg:px-16 xl:px-20 2xl:px-24">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 border-b border-cyan-400/30 pb-8">
           <div>
             <h5 className="font-bold text-xl mb-4 text-[#fcff33]" style={{ textShadow: "0 0 6px #fcff33" }}>Esra Fernanda Siregar</h5>
