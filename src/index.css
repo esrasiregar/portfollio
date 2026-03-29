@@ -216,3 +216,9 @@ body {
     display: none;
   }
 }
+
+@media (max-width: 1024px), (hover: none), (pointer: coarse) {
+  .liquid-glow-group {
+    display: none;
+  }
+}
